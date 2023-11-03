@@ -1,8 +1,11 @@
-
+import Demo from "./demo"
 function App() {
 
   return (
-    <h1>hello welcome to vite</h1>
+    <div>
+      <h1>hello welcome to vite</h1>
+      <Demo />
+    </div>
   )
 }
 
