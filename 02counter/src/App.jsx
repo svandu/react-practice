@@ -10,9 +10,22 @@ function App() {
  // let counter = 15;
 
   const addValue = () => {
-    if(counter < 20) {
-      setCounter(counter + 1)
-    }
+    // if(counter < 20) {
+    //   setCounter(counter + 1)
+    // }
+
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // but in this the update will work only be increasing one number 
+    // if we want to apply the update by 4 then we use the callback function inside the setcounter to increase the value by 4 
+
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
+
   }
 
   const removeValue = () => {
